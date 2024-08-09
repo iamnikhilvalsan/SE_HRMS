@@ -84,6 +84,18 @@
 												<input type="hidden" id="edit_id" name="id">
 												<div class="col-md-6">
 													<div class="form-group">
+														<label class="col-form-label">Company Name</label>
+														<input class="form-control edit_company" name="company" type="text">
+													</div>
+												</div>
+												<div class="col-md-6">  
+													<div class="form-group">
+														<label class="col-form-label">Company Logo<span class="text-danger">*</span></label>
+														<input class="form-control floating edit_avatar" name="avatar" type="file">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
 														<label class="col-form-label">First Name <span class="text-danger">*</span></label>
 														<input class="form-control edit_firstname" name="firstname" type="text">
 													</div>
@@ -101,23 +113,10 @@
 														<input class="form-control floating edit_email" name="email" type="email">
 													</div>
 												</div>
-												
-												<div class="col-md-6">  
-													<div class="form-group">
-														<label class="col-form-label">Client Picture<span class="text-danger">*</span></label>
-														<input class="form-control floating edit_avatar" name="avatar" type="file">
-													</div>
-												</div>
 												<div class="col-md-6">
 													<div class="form-group">
 														<label class="col-form-label">Phone </label>
 														<input class="form-control edit_phone" name="phone" type="text">
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="col-form-label">Company Name</label>
-														<input class="form-control edit_company" name="company" type="text">
 													</div>
 												</div>
 											</div>
@@ -154,6 +153,18 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
+								<label class="col-form-label">Company Name</label>
+								<input class="form-control" name="company" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">  
+							<div class="form-group">
+								<label class="col-form-label">Company Logo<span class="text-danger">*</span></label>
+								<input class="form-control floating" name="avatar" type="file">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
 								<label class="col-form-label">First Name <span class="text-danger">*</span></label>
 								<input class="form-control" name="firstname" type="text">
 							</div>
@@ -171,23 +182,10 @@
 								<input class="form-control floating" name="email" type="email">
 							</div>
 						</div>
-						
-						<div class="col-md-6">  
-							<div class="form-group">
-								<label class="col-form-label">Client Picture<span class="text-danger">*</span></label>
-								<input class="form-control floating" name="avatar" type="file">
-							</div>
-						</div>
 						<div class="col-md-6">
 							<div class="form-group">
 								<label class="col-form-label">Phone </label>
 								<input class="form-control" name="phone" type="text">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="col-form-label">Company Name</label>
-								<input class="form-control" name="company" type="text">
 							</div>
 						</div>
 					</div>

@@ -98,144 +98,277 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-task">
-                    <ul class="nav nav-tabs nav-tabs-top nav-justified mb-0">
-                        <li class="nav-item"><a class="nav-link active" href="#all_tasks" data-bs-toggle="tab" aria-expanded="true">All Tasks</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pending_tasks" data-bs-toggle="tab" aria-expanded="false">Pending Tasks</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#completed_tasks" data-bs-toggle="tab" aria-expanded="false">Completed Tasks</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane show active" id="all_tasks">
-                            <div class="task-wrapper">
-                                <div class="task-list-container">
-                                    <div class="task-list-body">
-                                        <ul id="task-list">
-                                            <li class="task">
-                                                <div class="task-container">
-                                                    <span class="task-action-btn task-check">
-                                                        <span class="action-circle large complete-btn" title="Mark Complete">
-                                                            <i class="material-icons">check</i>
-                                                        </span>
-                                                    </span>
-                                                    <span class="task-label" contenteditable="true">Patient appointment booking</span>
-                                                    <span class="task-action-btn task-btn-right">
-                                                        <span class="action-circle large" title="Assign">
-                                                            <i class="material-icons">person_add</i>
-                                                        </span>
-                                                        <span class="action-circle large delete-btn" title="Delete Task">
-                                                            <i class="material-icons">delete</i>
-                                                        </span>
-                                                    </span>
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-selected="false">
+                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                    <span class="d-none d-sm-block">Tasks</span>    
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" href="#profile" role="tab" aria-selected="true">
+                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                    <span class="d-none d-sm-block">Resources</span>    
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+                                    <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                    <span class="d-none d-sm-block">Assets</span>    
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content p-3 text-muted">
+                            <div class="tab-pane active" id="home" role="tabpanel">
+                                <div class="project-task">
+                                    <ul class="nav nav-tabs nav-tabs-top nav-justified mb-0">
+                                        <li class="nav-item"><a class="nav-link active" href="#all_tasks" data-bs-toggle="tab" aria-expanded="true">All Tasks</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#pending_tasks" data-bs-toggle="tab" aria-expanded="false">Pending Tasks</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#completed_tasks" data-bs-toggle="tab" aria-expanded="false">Completed Tasks</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="all_tasks">
+                                            <div class="task-wrapper">
+                                                <div class="task-list-container">
+                                                    <div class="task-list-body">
+                                                        <ul id="task-list">
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">check</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Patient appointment booking</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Assign">
+                                                                            <i class="material-icons">person_add</i>
+                                                                        </span>
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">check</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Appointment booking with payment gateway</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Assign">
+                                                                            <i class="material-icons">person_add</i>
+                                                                        </span>
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="completed task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">check</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label">Doctor available module</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Assign">
+                                                                            <i class="material-icons">person_add</i>
+                                                                        </span>
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">check</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Patient and Doctor video conferencing</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Assign">
+                                                                            <i class="material-icons">person_add</i>
+                                                                        </span>
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">check</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Private chat module</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Assign">
+                                                                            <i class="material-icons">person_add</i>
+                                                                        </span>
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">check</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Patient Profile add</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Assign">
+                                                                            <i class="material-icons">person_add</i>
+                                                                        </span>
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="task-list-footer">
+                                                        <div class="new-task-wrapper" style="overflow: visible">
+                                                            <textarea  id="new-task" placeholder="Enter new task here. . ."></textarea>
+                                                            <!-- <span class="error-message hidden">You need to enter a task first</span> -->
+                                                            <!-- <span class="add-new-task-btn btn" id="add-task">Add Task</span> -->
+                                                            <span class="btn" id="close-task-panel"></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </li>
-                                            <li class="task">
-                                                <div class="task-container">
-                                                    <span class="task-action-btn task-check">
-                                                        <span class="action-circle large complete-btn" title="Mark Complete">
-                                                            <i class="material-icons">check</i>
-                                                        </span>
-                                                    </span>
-                                                    <span class="task-label" contenteditable="true">Appointment booking with payment gateway</span>
-                                                    <span class="task-action-btn task-btn-right">
-                                                        <span class="action-circle large" title="Assign">
-                                                            <i class="material-icons">person_add</i>
-                                                        </span>
-                                                        <span class="action-circle large delete-btn" title="Delete Task">
-                                                            <i class="material-icons">delete</i>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                            <li class="completed task">
-                                                <div class="task-container">
-                                                    <span class="task-action-btn task-check">
-                                                        <span class="action-circle large complete-btn" title="Mark Complete">
-                                                            <i class="material-icons">check</i>
-                                                        </span>
-                                                    </span>
-                                                    <span class="task-label">Doctor available module</span>
-                                                    <span class="task-action-btn task-btn-right">
-                                                        <span class="action-circle large" title="Assign">
-                                                            <i class="material-icons">person_add</i>
-                                                        </span>
-                                                        <span class="action-circle large delete-btn" title="Delete Task">
-                                                            <i class="material-icons">delete</i>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                            <li class="task">
-                                                <div class="task-container">
-                                                    <span class="task-action-btn task-check">
-                                                        <span class="action-circle large complete-btn" title="Mark Complete">
-                                                            <i class="material-icons">check</i>
-                                                        </span>
-                                                    </span>
-                                                    <span class="task-label" contenteditable="true">Patient and Doctor video conferencing</span>
-                                                    <span class="task-action-btn task-btn-right">
-                                                        <span class="action-circle large" title="Assign">
-                                                            <i class="material-icons">person_add</i>
-                                                        </span>
-                                                        <span class="action-circle large delete-btn" title="Delete Task">
-                                                            <i class="material-icons">delete</i>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                            <li class="task">
-                                                <div class="task-container">
-                                                    <span class="task-action-btn task-check">
-                                                        <span class="action-circle large complete-btn" title="Mark Complete">
-                                                            <i class="material-icons">check</i>
-                                                        </span>
-                                                    </span>
-                                                    <span class="task-label" contenteditable="true">Private chat module</span>
-                                                    <span class="task-action-btn task-btn-right">
-                                                        <span class="action-circle large" title="Assign">
-                                                            <i class="material-icons">person_add</i>
-                                                        </span>
-                                                        <span class="action-circle large delete-btn" title="Delete Task">
-                                                            <i class="material-icons">delete</i>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                            <li class="task">
-                                                <div class="task-container">
-                                                    <span class="task-action-btn task-check">
-                                                        <span class="action-circle large complete-btn" title="Mark Complete">
-                                                            <i class="material-icons">check</i>
-                                                        </span>
-                                                    </span>
-                                                    <span class="task-label" contenteditable="true">Patient Profile add</span>
-                                                    <span class="task-action-btn task-btn-right">
-                                                        <span class="action-circle large" title="Assign">
-                                                            <i class="material-icons">person_add</i>
-                                                        </span>
-                                                        <span class="action-circle large delete-btn" title="Delete Task">
-                                                            <i class="material-icons">delete</i>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="pending_tasks"></div>
+                                        <div class="tab-pane" id="completed_tasks"></div>
                                     </div>
-                                    <div class="task-list-footer">
-                                        <div class="new-task-wrapper">
-                                            <textarea  id="new-task" placeholder="Enter new task here. . ."></textarea>
-                                            <span class="error-message hidden">You need to enter a task first</span>
-                                            <span class="add-new-task-btn btn" id="add-task">Add Task</span>
-                                            <span class="btn" id="close-task-panel">Close</span>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile" role="tabpanel">
+                                <div class="project-task">
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="qall_tasks">
+                                            <div class="task-wrapper">
+                                                <div class="task-list-container">
+                                                    <div class="task-list-body">
+                                                        <ul id="task-list">
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">person</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Jon Doe</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">person</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Vimal Vincent</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="task-list-footer">
+                                                        <div class="new-task-wrapper" style="overflow: visible">
+                                                            <textarea  id="new-task" placeholder="Assign resources here. . ."></textarea>
+                                                            <span class="btn" id="close-task-panel"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="messages" role="tabpanel">
+                                <div class="project-task">
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="qall_tasks">
+                                            <div class="task-wrapper">
+                                                <div class="task-list-container">
+                                                    <div class="task-list-body">
+                                                        <ul id="task-list">
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">more_horiz</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Gas Cutter</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="task">
+                                                                <div class="task-container">
+                                                                    <span class="task-action-btn task-check">
+                                                                        <span class="action-circle large complete-btn" title="Mark Complete">
+                                                                            <i class="material-icons">more_horiz</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="task-label" contenteditable="true">Exavator</span>
+                                                                    <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large delete-btn" title="Delete Task">
+                                                                            <i class="material-icons">delete</i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="task-list-footer">
+                                                        <div class="new-task-wrapper" style="overflow: visible">
+                                                            <textarea  id="new-task" placeholder="Assign assets here. . ."></textarea>
+                                                            <span class="btn" id="close-task-panel"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="pending_tasks"></div>
-                        <div class="tab-pane" id="completed_tasks"></div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-xl-3">
                 <div class="card">
                     <div class="card-body">
@@ -272,7 +405,7 @@
                 </div>
                 <div class="card project-user">
                     <div class="card-body">
-                        <h6 class="card-title m-b-20">Assigned Leader </h6>
+                        <h6 class="card-title m-b-20">Assigned Manager </h6>
                         <ul class="list-box">
                             @php
                                 $leader = $project->employee($project->leader);
@@ -297,29 +430,25 @@
                 </div>
                 <div class="card project-user">
                     <div class="card-body">
-                        <h6 class="card-title m-b-20">
-                            Assigned users 
-                        </h6>
+                        <h6 class="card-title m-b-20">Assigned Leader </h6>
                         <ul class="list-box">
-                            @foreach ($project->team as $team_member)
-                                @php
-                                    $member = $project->employee($team_member);
-                                @endphp
+                            @php
+                                $leader = $project->employee($project->leader);
+                            @endphp
                             <li>
                                 <a href="#">
                                     <div class="list-item">
                                         <div class="list-left">
-                                            <span class="avatar"><img alt=""  src="{{ !empty($member->avatar) ? asset('storage/employees/'.$member->avatar): asset('assets/img/user.jpg')}}"></span>
+                                            <span class="avatar"><img alt="avatar" src="{{ !empty($leader->avatar) ? asset('storage/employees/'.$leader->avatar): asset('assets/img/user.jpg')}}"></span>
                                         </div>
                                         <div class="list-body">
-                                            <span class="message-author">{{$member->firstname.' '.$member->lastname}}</span>
+                                            <span class="message-author">{{$leader->firstname.' '.$leader->lastname}}</span>
                                             <div class="clearfix"></div>
-                                            <span class="message-content">{{$member->designation->name}}</span>
+                                            <span class="message-content">Team Leader</span>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            @endforeach
                         </ul>
                     </div>
                 </div>

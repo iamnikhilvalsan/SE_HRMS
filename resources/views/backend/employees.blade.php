@@ -16,6 +16,7 @@
 	</div>
 	<div class="col-auto float-right ml-auto">
 		<a href="javascript:void(0)" class="btn add-btn" data-toggle="modal" data-target="#add_employee"><i class="fa fa-plus"></i> Add Employee</a>
+		<a href="#" class="btn add-btn" style="margin-left:5px;margin-right:5px;"><i class="fa fa-file-excel-o"></i> Import Excel</a>
 		<div class="view-icons">
 			<a href="{{route('employees')}}" class="grid-view btn btn-link active"><i class="fa fa-th"></i></a>
 			<a href="{{route('employees-list')}}" class="list-view btn btn-link"><i class="fa fa-bars"></i></a>
@@ -194,46 +195,61 @@
 					@csrf
 					@method('PUT')
 					<div class="row">
-						<input type="hidden" name="id" id="edit_id">
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label class="col-form-label">First Name <span class="text-danger">*</span></label>
-								<input class="form-control edit_firstname" name="firstname" type="text">
+								<input class="form-control" name="firstname" type="text">
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label class="col-form-label">Last Name</label>
-								<input class="form-control edit_lastname" name="lastname" type="text">
+								<input class="form-control" name="lastname" type="text">
 							</div>
 						</div>
 
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label class="col-form-label">Email <span class="text-danger">*</span></label>
-								<input class="form-control edit_email" name="email" type="email">
+								<input class="form-control" name="email" type="email">
 							</div>
 						</div>
 
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label class="col-form-label">Phone </label>
-								<input class="form-control edit_phone" name="phone" type="text">
+								<input class="form-control" name="phone" type="text">
 							</div>
 						</div>
+
 						<div class="col-sm-6">
 							<div class="form-group">
-								<label class="col-form-label">Company</label>
-								<input type="text" class="form-control edit_company" name="company">
+								<label class="col-form-label">Employee Number</label>
+								<input class="form-control" name="employee_number" type="text">
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="col-form-label">Joining Date </label>
+								<input class="form-control" name="joining_date" type="date">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Company </label>
+								<select name="company" class="select">
+									<option>Select Company</option>
+								</select>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
 								<label>Department <span class="text-danger">*</span></label>
-								<select name="department" selected="selected" id="edit_department" class="select">
+								<select name="department" class="select">
 									<option>Select Department</option>
 									@foreach ($departments as $department)
-										<option>{{$department->name}}</option>
+										<option value="{{$department->id}}">{{$department->name}}</option>
 									@endforeach
 								</select>
 							</div>
@@ -241,18 +257,40 @@
 						<div class="col-md-6">
 							<div class="form-group">
 								<label>Designation <span class="text-danger">*</span></label>
-								<select name="designation" selected="selected" class="select edit_designation">
+								<select name="designation" class="select">
 									<option>Select Designation</option>
 									@foreach ($designations as $designation)
-										<option>{{$designation->name}}</option>
+										<option value="{{$designation->id}}">{{$designation->name}}</option>
 									@endforeach
 								</select>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="col-form-label">Employee Picture<span class="text-danger">*</span></label>
-								<input class="form-control floating edit_avatar" name="avatar" type="file">
+								<label>Line Manager <span class="text-danger">*</span></label>
+								<select name="line_manager" class="select">
+									<option>Select Line Manager</option>
+								</select>
+							</div>
+						</div>
+						<!-- <div class="col-md-6">
+							<div class="form-group">
+								<label>Skills <span class="text-danger">*</span></label>
+								<select name="skills" class="select">
+									<option>Select Skills</option>
+								</select>
+							</div>
+						</div> -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-form-label">Employee Picture <span class="text-danger">*</span></label>
+								<input class="form-control floating" name="avatar" type="file">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-form-label">Employee CV <span class="text-danger">*</span></label>
+								<input class="form-control floating" name="cv" type="file">
 							</div>
 						</div>
 					</div>
