@@ -57,7 +57,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{{route('overtime')}}" method="post">
+                <form action="{{route('company')}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label>Name <span class="text-danger">*</span></label>

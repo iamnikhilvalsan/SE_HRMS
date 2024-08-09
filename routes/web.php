@@ -164,19 +164,19 @@ Route::group(['middleware'=>['auth']], function (){
     Route::delete('overtime',[OvertimeController::class,'destroy']);
 
     Route::get('company',[CompanyController::class,'index'])->name('company');
-    Route::post('company',[CompanyController::class,'store']);
+    Route::post('company',[CompanyController::class,'index']);
     Route::put('company',[CompanyController::class,'update']);
     Route::delete('company',[CompanyController::class,'destroy']);
     Route::delete('overtime',[OvertimeController::class,'destroy']);
 
     Route::get('skills',[SkillsController::class,'index'])->name('skills');
-    Route::post('skills',[SkillsController::class,'store']);
+    Route::post('skills',[SkillsController::class,'index']);
     Route::put('skills',[SkillsController::class,'update']);
     Route::delete('skills',[SkillsController::class,'destroy']);
     Route::delete('overtime',[OvertimeController::class,'destroy']);
 
     Route::get('assets-category',[AssetsCategoryController::class,'index'])->name('assets-category');
-    Route::post('assets-category',[AssetsCategoryController::class,'store']);
+    Route::post('assets-category',[AssetsCategoryController::class,'index']);
     Route::put('assets-category',[AssetsCategoryController::class,'update']);
     Route::delete('assets-category',[AssetsCategoryController::class,'destroy']);
 

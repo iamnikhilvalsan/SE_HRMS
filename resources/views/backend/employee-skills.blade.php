@@ -55,7 +55,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{{route('overtime')}}" method="post">
+                <form action="{{route('skills')}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label>Skill <span class="text-danger">*</span></label>
