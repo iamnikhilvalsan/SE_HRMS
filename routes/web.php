@@ -142,6 +142,7 @@ Route::group(['middleware'=>['auth']], function (){
     Route::get('clients-list',[ClientController::class,'lists'])->name('clients-list');
 
     Route::get('employees',[EmployeeController::class,'index'])->name('employees');
+    Route::get('employees/show/{id}',[EmployeeController::class,'show'])->name('employees.show');
     Route::post('employees',[EmployeeController::class,'store'])->name('employee.add');
     Route::get('employees-list',[EmployeeController::class,'list'])->name('employees-list');
     Route::put('employees',[EmployeeController::class,'update'])->name('employee.update');

@@ -85,10 +85,10 @@ class EmployeeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    /* public function show($id)
     {
         //
-    }
+    } */
 
     /**
      * Update the specified resource in storage.
@@ -142,5 +142,14 @@ class EmployeeController extends Controller
         $employee = Employee::find($request->id);
         $employee->delete();
         return back()->with('success',"Employee has been deleted");
+    }
+    
+    public function show($id)
+    {
+        $title = 'view employee';
+        $employee = Employee::where('id',$id)->firstOrFail();
+        return view('backend.employee_show',compact(
+            'title','employee'
+        ));
     }
 }

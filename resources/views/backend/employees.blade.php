@@ -43,7 +43,7 @@
 						<a data-id="{{$employee->id}}" class="dropdown-item deletebtn" href="javascript:void(0)" data-toggle="modal" ><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 					</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="javascript:void(0)">{{$employee->firstname}} {{$employee->lastname}}</a></h4>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="{{route('employees.show',$employee->id)}}" style="color:#2196f3">{{$employee->firstname}} {{$employee->lastname}}</a></h4>
 					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="javascript:void(0)">{{$employee->designation->name}}</a></h5>
 
 				</div>
