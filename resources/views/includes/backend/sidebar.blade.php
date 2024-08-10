@@ -23,6 +23,11 @@
                 <li class="{{ route_is(['employees','employees-list']) ? 'active' : '' }}">
                     <a href="{{route('employees')}}"><i class="la la-user"></i> <span> Resource Management</span></a>
                 </li>
+
+                <li class="{{route_is('leads') ? 'active' : '' }}">
+                    <a href="{{route('leads')}}"><i class="la la-user-secret"></i> <span>Leads</span></a>
+                </li>
+
                 <li class="{{ route_is(['projects','project-list']) ? 'active' : '' }}">
                     <a href="{{route('projects')}}"><i class="la la-rocket"></i> <span> Project Management</span></a>
                 </li>
@@ -35,11 +40,11 @@
                         <li><a class="{{ route_is('designations') ? 'active' : '' }}" href="{{route('designations')}}">Designations</a></li>
                         <li><a class="{{ route_is('departments') ? 'active' : '' }}" href="{{route('departments')}}">Departments</a></li>
                         <li><a class="{{ route_is('clients') ? 'active' : '' }}" href="{{route('clients')}}">Clients</a></li>
-                        <li><a class="{{ route_is('project-type') ? 'active' : '' }}" href="{{--route('project-type')--}}">Project Type</a></li>
+                        <li><a class="{{ route_is('project-type') ? 'active' : '' }}" href="{{route('project-type')}}">Project Type</a></li>
                         <li><a class="{{ route_is('skills') ? 'active' : '' }}" href="{{route('skills')}}">Skills</a></li>
                         <li><a class="{{ route_is('holidays') ? 'active' : '' }}" href="{{route('holidays')}}">Holidays</a></li>
                         <li><a class="{{ route_is('company') ? 'active' : '' }}" href="{{route('company')}}">Company</a></li>
-                        <li><a class="{{ route_is('assets-supplier') ? 'active' : '' }}" href="{{--route('assets-supplier')--}}">Assets Supplier</a></li>
+                        <li><a class="{{ route_is('assets-supplier') ? 'active' : '' }}" href="{{route('assets-supplier')}}">Assets Supplier</a></li>
                         <li><a class="{{ route_is('assets-category') ? 'active' : '' }}" href="{{route('assets-category')}}">Assets Category</a></li>
 
 
@@ -62,10 +67,6 @@
                         </li>
                     </ul>
                 </li> -->
-
-                <li class="{{route_is('leads') ? 'active' : '' }}">
-                    <a href="{{route('leads')}}"><i class="la la-user-secret"></i> <span>Leads</span></a>
-                </li>
 
                <!--  <li class="{{route_is('tickets') ? 'active' : '' }}">
                     <a href="{{route('tickets')}}"><i class="la la-ticket"></i> <span>Tickets</span></a>

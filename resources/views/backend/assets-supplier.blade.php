@@ -11,14 +11,14 @@
 @section('page-header')
 <div class="row align-items-center">
 	<div class="col">
-		<h3 class="page-title">Assets Category</h3>
+		<h3 class="page-title">Assets Supplier</h3>
 		<ul class="breadcrumb">
 			<li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
-			<li class="breadcrumb-item active">Assets Category</li>
+			<li class="breadcrumb-item active">Assets Supplier</li>
 		</ul>
 	</div>
 	<div class="col-auto float-right ml-auto">
-		<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_company"><i class="fa fa-plus"></i> Add Assets Category</a>
+		<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_company"><i class="fa fa-plus"></i> Add Assets Supplier</a>
 	</div>
 </div>
 @endsection
@@ -32,7 +32,9 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Assets Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
                         <th class="text-end">Actions</th>
                     </tr>
                 </thead>
@@ -49,16 +51,24 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add Assets Category</h5>
+                <h5 class="modal-title">Add Assets Supplier</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{{route('assets-category')}}" method="post">
+                <form action="{{route('company')}}" method="post">
                     @csrf
                     <div class="form-group">
-                        <label>Assets Category <span class="text-danger">*</span></label>
+                        <label>Name <span class="text-danger">*</span></label>
+                        <input class="form-control" name="date" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Email <span class="text-danger">*</span></label>
+                        <input class="form-control" name="date" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone <span class="text-danger">*</span></label>
                         <input class="form-control" name="date" type="text">
                     </div>
                     <div class="submit-section">

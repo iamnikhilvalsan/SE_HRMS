@@ -375,10 +375,10 @@
                         <h6 class="card-title m-b-15">Project details</h6>
                         <table class="table table-striped table-border">
                             <tbody>
-                                <tr>
+                                <!-- <tr>
                                     <td>Cost:</td>
                                     <td class="text-end">${{$project->rate}}</td>
-                                </tr>
+                                </tr> -->
                                 
                                 <tr>
                                     <td>Created:</td>

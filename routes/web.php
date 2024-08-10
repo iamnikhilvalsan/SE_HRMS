@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OvertimeController;
 use App\Http\Controllers\Admin\CompanyController;
+use App\Http\Controllers\Admin\ProjectTypeController;
+use App\Http\Controllers\Admin\AssetsSupplierController;
 use App\Http\Controllers\Admin\SkillsController;
 use App\Http\Controllers\Admin\AssetsCategoryController;
 use App\Http\Controllers\Admin\GoalController;
@@ -169,6 +171,16 @@ Route::group(['middleware'=>['auth']], function (){
     Route::put('company',[CompanyController::class,'update']);
     Route::delete('company',[CompanyController::class,'destroy']);
     Route::delete('overtime',[OvertimeController::class,'destroy']);
+
+    Route::get('assets-supplier',[AssetsSupplierController::class,'index'])->name('assets-supplier');
+    Route::post('assets-supplier',[AssetsSupplierController::class,'index']);
+    Route::put('assets-supplier',[AssetsSupplierController::class,'update']);
+    Route::delete('assets-supplier',[AssetsSupplierController::class,'destroy']);
+
+    Route::get('project-type',[ProjectTypeController::class,'index'])->name('project-type');
+    Route::post('project-type',[ProjectTypeController::class,'index']);
+    Route::put('project-type',[ProjectTypeController::class,'update']);
+    Route::delete('project-type',[ProjectTypeController::class,'destroy']);
 
     Route::get('skills',[SkillsController::class,'index'])->name('skills');
     Route::post('skills',[SkillsController::class,'index']);

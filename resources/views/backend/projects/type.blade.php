@@ -11,14 +11,14 @@
 @section('page-header')
 <div class="row align-items-center">
 	<div class="col">
-		<h3 class="page-title">Assets Category</h3>
+		<h3 class="page-title">Project Type</h3>
 		<ul class="breadcrumb">
 			<li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
-			<li class="breadcrumb-item active">Assets Category</li>
+			<li class="breadcrumb-item active">Project Type</li>
 		</ul>
 	</div>
 	<div class="col-auto float-right ml-auto">
-		<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_company"><i class="fa fa-plus"></i> Add Assets Category</a>
+		<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_company"><i class="fa fa-plus"></i> Add Project Type</a>
 	</div>
 </div>
 @endsection
@@ -32,7 +32,7 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Assets Category</th>
+                        <th>Project Type</th>
                         <th class="text-end">Actions</th>
                     </tr>
                 </thead>
@@ -49,16 +49,16 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add Assets Category</h5>
+                <h5 class="modal-title">Add Project Type</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{{route('assets-category')}}" method="post">
+                <form action="{{route('project-type')}}" method="post">
                     @csrf
                     <div class="form-group">
-                        <label>Assets Category <span class="text-danger">*</span></label>
+                        <label>Project Type <span class="text-danger">*</span></label>
                         <input class="form-control" name="date" type="text">
                     </div>
                     <div class="submit-section">

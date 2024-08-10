@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-3">
+                            <!-- <div class="col-sm-3">
                                 <div class="form-group">
                                     <label>Rate</label>
                                     <input placeholder="Rate in currency: 50" name="rate" class="form-control" type="text">
@@ -61,6 +61,13 @@
                                     <select class="select" name="rate_type">
                                         <option>Hourly</option>
                                         <option>Fixed</option>
+                                    </select>
+                                </div>
+                            </div> --><div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Project Type</label>
+                                    <select class="select" name="priority">
+                                        <option value="">Select project Type</option>
                                     </select>
                                 </div>
                             </div>
@@ -79,7 +86,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Project Managers</label>
-                                    <select class="select2" name="managers">
+                                    <select class="select2" name="managers" multiple>
                                         <option>Select Project Managers</option>
                                         @foreach (\App\Models\Employee::get() as $employee)
                                             <option value="{{$employee->id}}">{{$employee->firstname.' '.$employee->lastname}} </option>
@@ -90,7 +97,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Project Leaders</label>
-                                    <select class="select2" name="leader">
+                                    <select class="select2" name="leader" multiple>
                                         <option>Select Project Leaders</option>
                                         @foreach (\App\Models\Employee::get() as $employee)
                                             <option value="{{$employee->id}}">{{$employee->firstname.' '.$employee->lastname}} </option>
@@ -117,7 +124,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" name="team[]">
+                        <input type="hidden" name="team[]" value="1">
                         <!-- <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
@@ -133,6 +140,10 @@
                             
                         </div> -->
                         <div class="form-group">
+                            <label>Location</label>
+                            <input class="form-control" name="location" type="text">
+                        </div>
+                        <div class="form-group">
                             <label>Description</label>
                             <textarea name="description" rows="4" class="form-control summernote" placeholder="Enter your message here"></textarea>
                         </div>
@@ -140,6 +151,45 @@
                             <label>Upload Files</label>
                             <input class="form-control" name="project_files[]" multiple type="file">
                         </div>
+                        <p>Resources Designations</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Choose Designation</label>
+                                    <select class="select2" name="">
+                                        <option>Fire Safty</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>No.of Resources</label>
+                                    <input class="form-control" name=""  type="text" value="2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Choose Designation</label>
+                                    <select class="select2" name="">
+                                        <option>Supervisor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>No.of Resources</label>
+                                    <input class="form-control" name=""  type="text" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="radio" name="matching" checked> Automated Matching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="matching"> Manual Matching
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-sm">Add More</button>
+                        
                         <div class="submit-section">
                             <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                         </div>
@@ -202,7 +252,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-3">
+                            <!-- <div class="col-sm-3">
                                 <div class="form-group">
                                     <label>Rate</label>
                                     <input placeholder="Rate in currency: 50" name="rate" class="form-control" type="text">
@@ -214,6 +264,13 @@
                                     <select class="select" name="rate_type">
                                         <option>Hourly</option>
                                         <option>Fixed</option>
+                                    </select>
+                                </div>
+                            </div> --><div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Project Type</label>
+                                    <select class="select" name="priority">
+                                        <option value="">Select project Type</option>
                                     </select>
                                 </div>
                             </div>
@@ -232,7 +289,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Project Managers</label>
-                                    <select class="select2" name="managers">
+                                    <select class="select2" name="managers" multiple>
                                         <option>Select Project Managers</option>
                                         @foreach (\App\Models\Employee::get() as $employee)
                                             <option value="{{$employee->id}}">{{$employee->firstname.' '.$employee->lastname}} </option>
@@ -243,7 +300,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Project Leaders</label>
-                                    <select class="select2" name="leader">
+                                    <select class="select2" name="leader" multiple>
                                         <option>Select Project Leaders</option>
                                         @foreach (\App\Models\Employee::get() as $employee)
                                             <option value="{{$employee->id}}">{{$employee->firstname.' '.$employee->lastname}} </option>
@@ -270,7 +327,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" name="team[]">
+                        <input type="hidden" name="team[]" value="1">
                         <!-- <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
@@ -286,6 +343,10 @@
                             
                         </div> -->
                         <div class="form-group">
+                            <label>Location</label>
+                            <input class="form-control" name="location" type="text">
+                        </div>
+                        <div class="form-group">
                             <label>Description</label>
                             <textarea name="description" rows="4" class="form-control summernote" placeholder="Enter your message here"></textarea>
                         </div>
@@ -293,6 +354,45 @@
                             <label>Upload Files</label>
                             <input class="form-control" name="project_files[]" multiple type="file">
                         </div>
+                        <p>Resources Designations</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Choose Designation</label>
+                                    <select class="select2" name="">
+                                        <option>Fire Safty</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>No.of Resources</label>
+                                    <input class="form-control" name=""  type="text" value="2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Choose Designation</label>
+                                    <select class="select2" name="">
+                                        <option>Supervisor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>No.of Resources</label>
+                                    <input class="form-control" name=""  type="text" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="radio" name="matching" checked> Automated Matching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="matching"> Manual Matching
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-sm">Add More</button>
+                        
                         <div class="submit-section">
                             <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                         </div>
