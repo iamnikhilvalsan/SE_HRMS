@@ -51,7 +51,7 @@
 				<!-- Page Content -->
                 <div class="content container-fluid">
 					<div class="row">
-						<div class="col-md-8 offset-md-2">
+						<div class="col-md-12">
 						
 							<!-- Page Header -->
 							<div class="page-header">

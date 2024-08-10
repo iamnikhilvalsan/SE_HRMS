@@ -102,15 +102,15 @@
                     <div class="card-body">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-selected="false">
-                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                    <span class="d-none d-sm-block">Tasks</span>    
+                                <a class="nav-link active" data-toggle="tab" href="#profile" role="tab" aria-selected="true">
+                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                    <span class="d-none d-sm-block">Resources</span>    
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-toggle="tab" href="#profile" role="tab" aria-selected="true">
-                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
-                                    <span class="d-none d-sm-block">Resources</span>    
+                                <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-selected="false">
+                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                    <span class="d-none d-sm-block">Tasks</span>    
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -121,7 +121,7 @@
                             </li>
                         </ul>
                         <div class="tab-content p-3 text-muted">
-                            <div class="tab-pane active" id="home" role="tabpanel">
+                            <div class="tab-pane" id="home" role="tabpanel">
                                 <div class="project-task">
                                     <ul class="nav nav-tabs nav-tabs-top nav-justified mb-0">
                                         <li class="nav-item"><a class="nav-link active" href="#all_tasks" data-bs-toggle="tab" aria-expanded="true">All Tasks</a></li>
@@ -260,7 +260,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="profile" role="tabpanel">
+                            <div class="tab-pane active" id="profile" role="tabpanel">
                                 <div class="project-task">
                                     <div class="tab-content">
                                         <div class="tab-pane show active" id="qall_tasks">
