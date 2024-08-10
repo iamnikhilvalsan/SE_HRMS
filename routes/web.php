@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OvertimeController;
 use App\Http\Controllers\Admin\CompanyController;
+use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\ProjectTypeController;
 use App\Http\Controllers\Admin\AssetsSupplierController;
 use App\Http\Controllers\Admin\SkillsController;
@@ -170,7 +171,11 @@ Route::group(['middleware'=>['auth']], function (){
     Route::post('company',[CompanyController::class,'index']);
     Route::put('company',[CompanyController::class,'update']);
     Route::delete('company',[CompanyController::class,'destroy']);
-    Route::delete('overtime',[OvertimeController::class,'destroy']);
+
+    Route::get('notifications',[NotificationController::class,'index'])->name('notifications');
+    Route::post('notifications',[NotificationController::class,'index']);
+    Route::put('notifications',[NotificationController::class,'update']);
+    Route::delete('notifications',[NotificationController::class,'destroy']);
 
     Route::get('assets-supplier',[AssetsSupplierController::class,'index'])->name('assets-supplier');
     Route::post('assets-supplier',[AssetsSupplierController::class,'index']);

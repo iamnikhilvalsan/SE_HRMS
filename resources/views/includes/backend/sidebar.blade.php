@@ -89,7 +89,7 @@
                     <a href="{{route('policies')}}"><i class="la la-file-pdf-o"></i> <span>Knowledge Base</span></a>
                 </li>
                 <li class="{{ route_is('notifications') ? 'active' : '' }}">
-                    <a href="{{--route('notifications')--}}"><i class="la la-bell"></i> <span>Notifications</span></a>
+                    <a href="{{route('notifications')}}"><i class="la la-bell"></i> <span>Notifications</span></a>
                 </li>
 
                 <!-- <li class="submenu">
