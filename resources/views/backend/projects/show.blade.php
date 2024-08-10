@@ -277,6 +277,9 @@
                                                                     </span>
                                                                     <span class="task-label" contenteditable="true">Jon Doe</span>
                                                                     <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Transfer Employee">
+                                                                            <i class="material-icons">sync</i>
+                                                                        </span>
                                                                         <span class="action-circle large delete-btn" title="Delete Task">
                                                                             <i class="material-icons">delete</i>
                                                                         </span>
@@ -292,6 +295,9 @@
                                                                     </span>
                                                                     <span class="task-label" contenteditable="true">Vimal Vincent</span>
                                                                     <span class="task-action-btn task-btn-right">
+                                                                        <span class="action-circle large" title="Transfer Employee">
+                                                                            <i class="material-icons">sync</i>
+                                                                        </span>
                                                                         <span class="action-circle large delete-btn" title="Delete Task">
                                                                             <i class="material-icons">delete</i>
                                                                         </span>

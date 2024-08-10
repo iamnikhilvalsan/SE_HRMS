@@ -11,14 +11,14 @@
 @section('page-header')
 <div class="row align-items-center">
 	<div class="col">
-		<h3 class="page-title">Company</h3>
+		<h3 class="page-title">Employer</h3>
 		<ul class="breadcrumb">
 			<li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
-			<li class="breadcrumb-item active">Company</li>
+			<li class="breadcrumb-item active">Employer</li>
 		</ul>
 	</div>
 	<div class="col-auto float-right ml-auto">
-		<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_company"><i class="fa fa-plus"></i> Add Company</a>
+		<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_company"><i class="fa fa-plus"></i> Add Employer</a>
 	</div>
 </div>
 @endsection
@@ -51,7 +51,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add Company</h5>
+                <h5 class="modal-title">Add Employer</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

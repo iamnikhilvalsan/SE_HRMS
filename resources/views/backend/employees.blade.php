@@ -110,11 +110,23 @@
 								<input class="form-control" name="joining_date" type="date">
 							</div>
 						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="col-form-label">Date of Birth </label>
+								<input class="form-control" name="dob" type="date">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="col-form-label">Basic Payroll </label>
+								<input class="form-control" name="payroll" type="text">
+							</div>
+						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label>Company </label>
+								<label>Employer </label>
 								<select name="company" class="select">
-									<option>Select Company</option>
+									<option>Select Employer</option>
 								</select>
 							</div>
 						</div>
@@ -235,11 +247,23 @@
 								<input class="form-control" name="joining_date" type="date">
 							</div>
 						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="col-form-label">Date of Birth </label>
+								<input class="form-control" name="dob" type="date">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="col-form-label">Basic Payroll </label>
+								<input class="form-control" name="payroll" type="text">
+							</div>
+						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label>Company </label>
+								<label>Employer </label>
 								<select name="company" class="select">
-									<option>Select Company</option>
+									<option>Select Employer</option>
 								</select>
 							</div>
 						</div>

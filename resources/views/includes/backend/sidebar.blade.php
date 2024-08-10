@@ -43,7 +43,7 @@
                         <li><a class="{{ route_is('project-type') ? 'active' : '' }}" href="{{route('project-type')}}">Project Type</a></li>
                         <li><a class="{{ route_is('skills') ? 'active' : '' }}" href="{{route('skills')}}">Skills</a></li>
                         <li><a class="{{ route_is('holidays') ? 'active' : '' }}" href="{{route('holidays')}}">Holidays</a></li>
-                        <li><a class="{{ route_is('company') ? 'active' : '' }}" href="{{route('company')}}">Company</a></li>
+                        <li><a class="{{ route_is('company') ? 'active' : '' }}" href="{{route('company')}}">Employer</a></li>
                         <li><a class="{{ route_is('assets-supplier') ? 'active' : '' }}" href="{{route('assets-supplier')}}">Assets Supplier</a></li>
                         <li><a class="{{ route_is('assets-category') ? 'active' : '' }}" href="{{route('assets-category')}}">Assets Category</a></li>
 

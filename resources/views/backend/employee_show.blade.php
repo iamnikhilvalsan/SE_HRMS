@@ -19,7 +19,46 @@
 	
 </div>
 @endsection
-
+<style>.tool-card {
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .tools-owned {
+            background-color: #17a2b8; /* Cyan */
+        }
+        .tools-request {
+            background-color: #dc3545; /* Red */
+        }
+        .assign-tools {
+            background-color: #6f42c1; /* Purple */
+        }
+        .btn-view-more {
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+        .project-card {
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .total-projects {
+            background-color: #007bff; /* Blue */
+        }
+        .past-projects {
+            background-color: #28a745; /* Green */
+        }
+        .current-projects {
+            background-color: #ffc107; /* Yellow */
+            color: black;
+        }
+        .btn-view-more {
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+    </style>
 
 @section('content')
      <div class="row">
@@ -28,11 +67,16 @@
                     <div class="card-body">
                         <div class="project-title">
                             <div class="col-lg-9 col-xl-9 pull-left">
-                                <h5 class="card-title">{{$employee->firstname.' '.$employee->lastname}}</h5>
-                                <p class="m-0">ID: {{$employee->uuid}}</p>
-                                <p class="m-0">Designation: {{$employee->designation->name}}</p>
-                                <p class="m-0">Email: {{$employee->email}}</p>
+                                <h5 class="card-title">Personal Info</h5>
+                                <p class="m-0">Name: {{$employee->firstname.' '.$employee->lastname}}</p>
+                                <p class="m-0">Date of Birth: 23-Feb-1995</p>
                                 <p class="m-0">Phone: {{$employee->phone}}</p>
+                                <p class="m-0">Email: {{$employee->email}}</p>
+                                <p class="m-0">Date of Joining: 23-Jul-2024</p>
+                                <p class="m-0">Employer: Employer Name</p>
+                                <p class="m-0">Employee ID: {{$employee->uuid}}</p>
+                                <p class="m-0">Department: Department name</p>
+                                <p class="m-0">Designation: {{$employee->designation->name}}</p>
                             </div>
                             <div class="col-lg-3 col-xl-3 pull-left">
                                 <div class="profile-img pull-right">
@@ -55,6 +99,18 @@
                                 <a class="nav-link " data-toggle="tab" href="#profile" role="tab" aria-selected="true">
                                     <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
                                     <span class="d-none d-sm-block">Certifications</span>    
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" href="#Projects" role="tab" aria-selected="true">
+                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                    <span class="d-none d-sm-block">Projects</span>    
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" href="#Tools" role="tab" aria-selected="true">
+                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                    <span class="d-none d-sm-block">Tools</span>    
                                 </a>
                             </li>
                         </ul>
@@ -152,6 +208,56 @@
                                         <!-- Add more rows as needed -->
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="tab-pane" id="Projects" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="project-card total-projects">
+                                            <h5>No: of Projects</h5>
+                                            <p>10</p> <!-- Replace 10 with the actual number -->
+                                            <a href="#" class="btn btn-light btn-view-more">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="project-card past-projects">
+                                            <h5>Past Projects</h5>
+                                            <p>7</p> <!-- Replace 7 with the actual number -->
+                                            <a href="#" class="btn btn-light btn-view-more">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="project-card current-projects">
+                                            <h5>Current Projects</h5>
+                                            <p>3</p> <!-- Replace 3 with the actual number -->
+                                            <a href="#" class="btn btn-dark btn-view-more">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Tools" role="tabpanel">
+                                <div class="row">
+                                <div class="col-md-4">
+                                    <div class="tool-card tools-owned">
+                                        <h5>Tools Owned</h5>
+                                        <p>15</p> <!-- Replace 15 with the actual number -->
+                                        <a href="#" class="btn btn-light btn-view-more">View More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tool-card tools-request">
+                                        <h5>Tools Request</h5>
+                                        <p>5</p> <!-- Replace 5 with the actual number -->
+                                        <a href="#" class="btn btn-light btn-view-more">View More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tool-card assign-tools">
+                                        <h5>Assign Tools</h5>
+                                        <p>3</p> <!-- Replace 3 with the actual number -->
+                                        <a href="#" class="btn btn-light btn-view-more">View More</a>
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
